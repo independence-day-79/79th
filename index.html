@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Independence Day 🇮🇳 • Dark Here!!</title>
+  <meta name="description" content="A warm, mobile‑friendly Independence Day site with a festive hero, kind wishes, and a small photo gallery. No ads, just vibes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --saffron:#FF9933; --white:#FFFFFF; --green:#138808; --chakra:#0A5DB3; }
+    html,body{height:100%}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:#0b1016;color:#e9f2f2}
+    .neon{ text-shadow:0 0 10px rgba(255,255,255,.25), 0 0 30px rgba(19,136,8,.25) }
+    .glass{backdrop-filter: blur(10px); background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03)); border:1px solid rgba(255,255,255,.12)}
+    #fw{position:fixed;inset:0;z-index:-2;background:#0b1016}
+  </style>
+
+<style>
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+</style>
+
+
+  <style>
+    /* Make non-background images responsive without distortion */
+    .img-fluid { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <canvas id="fw" aria-hidden="true"></canvas>  <!-- Header -->  <header class="sticky top-0 z-30">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between glass rounded-b-2xl">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-[--chakra] grid place-items-center text-white font-bold">I</div>
+        <span class="font-extrabold tracking-wide">Dark Here!!</span>
+      </div>
+      <nav class="text-sm text-white/80 hidden sm:flex gap-6">
+        <a href="#greeting" class="hover:text-white">Greeting</a>
+        <a href="#gallery" class="hover:text-white">Gallery</a>
+        <a href="#wishes" class="hover:text-white">Wishes</a>
+      </nav>
+    </div>
+  </header>  <!-- Hero (friendly, no ads) -->  <section class="relative pt-16 pb-14 sm:pt-20 sm:pb-20 overflow-hidden">
+    <div aria-hidden class="absolute inset-0 -z-10">
+      <picture>
+        <source media="(min-width:1024px)" srcset="https://images.unsplash.com/photo-1507702552775-16f6b32df69b?q=80&w=1920&auto=format&fit=crop">
+        <img class="w-full h-full object-cover opacity-25" src="https://images.unsplash.com/photo-1507702552775-16f6b32df69b?q=80&w=1200&auto=format&fit=crop" alt="Abstract tricolour background" loading="eager" decoding="async">
+      </picture>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0b1016] via-[#0b1016]/60 to-[#0b1016]"></div>
+    </div>
+    <div class="mx-auto max-w-6xl px-4 grid lg:grid-cols-2 items-center gap-10">
+      <div>
+        <p class="uppercase tracking-[0.35em] text-white/70 text-xs sm:text-sm mb-3">15 August 2025 • India @ 79</p>
+        <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight">
+          <span class="block bg-clip-text text-transparent bg-gradient-to-r from-[--saffron] via-white to-[--green]">Happy Independence Day</span>
+          <span class="text-white/90 text-xl sm:text-2xl mt-3 block neon">Jai Hind 🇮🇳</span>
+        </h1>
+        <p class="mt-5 text-white/85 max-w-xl">Wishing you peace, progress, and unity. Celebrate today with kindness and pride — from <strong>Dark Here!!</strong> with love.</p>
+        <div class="mt-7 flex flex-col sm:flex-row gap-3">
+          <button id="shareBtn" class="rounded-2xl px-6 py-3 font-semibold text-sm bg-[--chakra] hover:brightness-110">Share Wishes</button>
+          <button id="personalizeBtn" class="rounded-2xl px-6 py-3 font-semibold text-sm bg-[--saffron] hover:brightness-110">Personalize</button>
+        </div>
+        <p id="note" class="mt-3 text-white/70 text-sm hidden"></p>
+      </div>
+      <div class="grid place-items-center">
+<picture>
+  <source media="(min-width:1024px)"
+          srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Indian_Flag.jpg/900px-Indian_Flag.jpg">
+<img class="rounded-3xl border border-white/10 shadow-2xl img-fluid w-full h-auto" src="waving-flag.png" alt="Indian flag waving" 
+     loading="lazy" decoding="async">
+</picture>
+      </div>
+    </div>
+  </section>  <!-- Friendly Greeting -->  <section id="greeting" class="py-10">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="glass rounded-3xl p-6 sm:p-10">
+        <h2 class="text-2xl sm:text-3xl font-bold">A Friendly Wish</h2>
+        <p class="mt-3 text-white/85">May the tricolour always fly high and our hearts stay open to each other. If you’re reading this, here’s a smile sent your way today 🙂</p>
+      </div>
+    </div>
+  </section>  <!-- Simple Gallery (no ads) -->  <section id="gallery" class="py-6 sm:py-12">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl sm:text-3xl font-bold">Gallery</h2>
+      <p class="text-white/70 mt-1">Mobile‑optimized, lazy‑loaded photos.</p>
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img class="rounded-2xl border border-white/10 rounded-3xl border border-white/10 shadow-2xl img-fluid w-full h-auto" src="image.jpeg" alt="Rangoli" 
+     loading="lazy" decoding="async">
+        <img class="rounded-2xl border border-white/10 img-fluid w-full h-auto" src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800&auto=format&fit=crop" alt="Tricolour smoke" loading="lazy" decoding="async">
+        <source media="(min-width:1024px)"
+          srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Indian_Flag.jpg/900px-Indian_Flag.jpg">
+<img class="rounded-2xl border border-white/10 rounded-3xl border border-white/10 shadow-2xl img-fluid w-full h-auto" src="download.jpeg" alt="Patriotic illumination" 
+     loading="lazy" decoding="async">
+        <img class="rounded-2xl border border-white/10 rounded-3xl border border-white/10 shadow-2xl img-fluid w-full h-auto" src="images.jpeg" alt="Rangoli" 
+     loading="lazy" decoding="async">
+        <img class="rounded-2xl border border-white/10 img-fluid w-full h-auto" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=800&auto=format&fit=crop" alt="India Gate" loading="lazy" decoding="async">
+        <img class="rounded-2xl border border-white/10 img-fluid w-full h-auto" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop" alt="Festive crowd" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>  <!-- Wishes (tiny, friendly) -->  <section id="wishes" class="py-10">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="glass rounded-3xl p-6 sm:p-10">
+        <h2 class="text-2xl sm:text-3xl font-bold">Send a Wish</h2>
+        <form id="wishForm" class="mt-4 grid sm:grid-cols-[1fr_auto] gap-3">
+          <input id="who" type="text" placeholder="Your name (optional)" class="w-full rounded-2xl px-4 py-3 bg-white/10 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[--chakra]"/>
+          <button class="rounded-2xl px-6 py-3 font-semibold text-sm bg-[--green] hover:brightness-110">Post</button>
+        </form>
+        <div id="wishList" class="mt-5 grid gap-2"></div>
+      </div>
+    </div>
+  </section>  <!-- Footer -->  <footer class="pb-14 pt-8 border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-white/70 text-sm">© 2025 • With ❤ by <span class="font-semibold">Dark Here!!</span></p>
+      <div class="flex items-center gap-3 text-white/70">
+        <a class="hover:text-white" href="#greeting">Greeting</a>
+        <a class="hover:text-white" href="#gallery">Gallery</a>
+        <a class="hover:text-white" href="#wishes">Wishes</a>
+      </div>
+    </div>
+  </footer><template id="tplWish">Wishing you a very Happy Independence Day! 🇮🇳\nMay the tricolour keep soaring high. Jai Hind!</template>
+
+  <script>
+    // Fireworks (lightweight) background
+    (function(){
+      const c=document.getElementById('fw'); const ctx=c.getContext('2d'); let W,H; const DPR=Math.min(2,window.devicePixelRatio||1);
+      function resize(){W=c.width=innerWidth*DPR;H=c.height=innerHeight*DPR} resize(); addEventListener('resize',resize);
+      const P=[]; function boom(x,y){const n=30+Math.random()*30; for(let i=0;i<n;i++){P.push({x,y,vx:(Math.random()*2-1)*(2+Math.random()*3),vy:(Math.random()*2-1)*(2+Math.random()*3),life:60+Math.random()*40,c:['rgba(255,153,51,','rgba(255,255,255,','rgba(19,136,8,'][(i%3)]})}}
+      setInterval(()=>boom(Math.random()*W,Math.random()*H*0.6+H*0.1),1200);
+      (function tick(){ctx.fillStyle='rgba(11,16,22,0.25)';ctx.fillRect(0,0,W,H);for(let i=P.length-1;i>=0;i--){const p=P[i];p.life-=1;if(p.life<=0){P.splice(i,1);continue}p.x+=p.vx;p.y+=p.vy;p.vy+=0.02*DPR;const a=Math.max(0,p.life/100);ctx.beginPath();ctx.arc(p.x,p.y,1.6*DPR,0,Math.PI*2);ctx.fillStyle=p.c+a+')';ctx.fill()}requestAnimationFrame(tick)})();
+    })();
+
+    // Share / personalize
+    const shareBtn=document.getElementById('shareBtn');
+    const baseWish=document.getElementById('tplWish').content.textContent.trim();
+    shareBtn.addEventListener('click',async()=>{
+      if(navigator.share){try{await navigator.share({title:'Independence Day 🇮🇳', text:baseWish});}catch(e){}}
+      else {await navigator.clipboard.writeText(baseWish); shareBtn.textContent='Copied!'; setTimeout(()=>shareBtn.textContent='Share Wishes',1500);}
+    });
+    document.getElementById('personalizeBtn').addEventListener('click',()=>{
+      const name=prompt('Add your name to the greeting:','Dark Here!!'); if(!name) return;
+      const note=document.getElementById('note'); note.textContent=`Personalized for ${name}. Share it with your friends!`; note.classList.remove('hidden');
+    });
+
+    // Wishes list (local only)
+    const f=document.getElementById('wishForm'); const list=document.getElementById('wishList');
+    f.addEventListener('submit',(e)=>{e.preventDefault(); const who=(document.getElementById('who').value||'A Friend').trim(); const item=document.createElement('div'); item.className='rounded-xl px-4 py-2 text-sm border border-white/10 bg-white/10'; item.textContent=`🇮🇳 ${who} wishes everyone a joyful Independence Day!`; list.prepend(item); f.reset();});
+  </script></body>
+</html>
